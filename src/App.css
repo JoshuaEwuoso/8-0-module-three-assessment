@@ -7,12 +7,36 @@
 	grid-template-columns: repeat(4, 1fr);
 	align-items: center;
 	text-align: center;
-	margin: 20px;
 	background-color: aquamarine;
 	padding: 10px;
+	font-weight: bolder;
+	font-size: 25px;
+	color: black;
 }
 
 .logo {
 	height: 50px;
 	width: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.movies {
+	text-align: center;
+}
+
+.locations {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+.home {
+	text-align: center;
+	margin-top: 75px;
 }
