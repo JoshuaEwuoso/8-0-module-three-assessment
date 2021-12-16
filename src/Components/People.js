@@ -6,7 +6,7 @@ class People extends React.Component {
     super();
     this.state = {
       people: [],
-      info: {},
+      // info: {},
       error: false,
       input: "",
       age: "",
