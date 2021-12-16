@@ -15,7 +15,7 @@ class Locations extends React.Component {
       .then((res) => res.json())
       .then((data) => {
           this.setState({
-              locations: data.map((location) => location.name),
+              locations: data.map((location) => location),
           });
       });
   };
@@ -32,7 +32,7 @@ class Locations extends React.Component {
 
   render() {
     const { locations, showList } = this.state;
-    const listItems = locations.map((location, index) => <li key={ index }>{ location }</li>);
+    const listItems = locations.map((location, index) => <li key={ index }><br />Name: { location.name } <br />Climate: { location.climate } <br />Terrain: { location.terrain }</li>);
     return (
       <div className="locations">
         <h1>List of Locations</h1>
@@ -41,8 +41,6 @@ class Locations extends React.Component {
       </div>
     );
   }
-
-
 }
 
 
